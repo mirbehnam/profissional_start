@@ -1,5 +1,6 @@
 package com.example.profitional_start;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -12,7 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     public void log(String tag, String message) {
         Log.d(tag, message);
     }
+
+    AlertDialog dialog = new AlertDialog.Builder(MainActivity.this).show();
 }
