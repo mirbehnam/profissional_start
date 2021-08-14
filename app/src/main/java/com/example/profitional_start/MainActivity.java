@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void log(String tag, String message) {
         Log.d(tag, message);
+        new AlertDialog.Builder(MainActivity.this).show();
+
     }
 
-    AlertDialog dialog = new AlertDialog.Builder(MainActivity.this).show();
+
 }
